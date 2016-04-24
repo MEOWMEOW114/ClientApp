@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- http://stackoverflow.com/questions/30533444/appbarlayout-with-framelayout-container-as-scrolling-content-doesnt-work -->
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@android:color/transparent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <!--
+              Make your toolbar expandable with CollapsingToolbarLayout
+              Note that a centered ActionBar won't play nicely with the CollapsingToolbarLayout
+            -->
+        <!--
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp">
+            -->
+
+        <!-- Add a parallax background image if using CollapsingToolbarLayout -->
+        <!--
+        <ImageView
+            android:id="@+id/backdrop"
+            android:src="@drawable/backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:layout_collapseMode="parallax" />
+            -->
+
+        <!-- Include our custom Toolbar -->
+        <include layout="@layout/toolbar" />
+
+        <!--
+        </android.support.design.widget.CollapsingToolbarLayout>
+        -->
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:foreground="?android:windowContentOverlay">
+
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <!--   app:layout_behavior="com.foodkart.henkis.user.ui.FixedScrollingViewBehavior"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    <!-- Your Scrollable View
+       <android.support.v4.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:fillViewport="true"
+           app:layout_behavior="com.foodkart.henkis.user.ui.FixedScrollingViewBehavior"
+           >
+
+
+
+    <FrameLayout android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:foreground="?android:windowContentOverlay"
+        />
+
+
+    </android.support.v4.widget.NestedScrollView>-->
+
+    <!--
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_shopping_cart" />
+        -->
+
+</android.support.design.widget.CoordinatorLayout>
+
+    <!--
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/fragment"
+              android:name="com.bindo.catalog.ui.fragment.StorePickerActivityFragment"
+              tools:layout="@layout/fragment_store_picker"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+    -->

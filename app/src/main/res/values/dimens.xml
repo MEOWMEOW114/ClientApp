@@ -1,0 +1,69 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+
+    <dimen name="seekbar_label_length">70dp</dimen>
+
+
+    <!-- Define standard dimensions to comply with Holo-style grids and rhythm. -->
+
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_huge">64dp</dimen>
+
+    <!-- Semantic definitions -->
+
+    <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
+    <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
+
+
+    <dimen name="customTitle">14sp</dimen>
+    <dimen name="customEntry">18sp</dimen>
+
+
+    <!-- space -->
+    <dimen name="spacing_small">8sp</dimen>
+    <dimen name="spacing">16sp</dimen>
+
+    <!-- Text -->
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_xlarge">24sp</dimen>
+
+    <!-- Line -->
+    <dimen name="line">2sp</dimen>
+
+
+    <!-- Component -->
+    <dimen name="drawer_header">152sp</dimen>
+    <dimen name="image_thumb">64sp</dimen>
+    <dimen name="share_footer">64dp</dimen>
+    <dimen name="color_pallete">72dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="round_rect_radius">8dp</dimen>
+    <dimen name="round_rect_stroke">2dp</dimen>
+    <dimen name="padding_normal">10dp</dimen>
+    <dimen name="column_width">60dp</dimen>
+
+    <!-- circular image dimension-->
+    <dimen name="circular_iamge_diameter">48dp</dimen>
+
+
+    <dimen name="topeats_short_padding">5dp</dimen>
+    <dimen name="topeats_long_padding">10dp</dimen>
+    <dimen name="topeats_icon">84dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>
